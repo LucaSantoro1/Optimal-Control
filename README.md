@@ -2,6 +2,7 @@
 
 In the following project particular attention is given to the design and implementation of an optimal control law for a **2-DOF robot**. The project
 consists of four main steps:
+![Screenshot](foto1robot.jpg)
 
 ## Task 0 - Problem Setup :
 Discretization of the manipulator dynamics and writing the Dynamics.m function;
