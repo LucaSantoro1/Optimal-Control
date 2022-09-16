@@ -1,0 +1,68 @@
+%%%%%%%%%%%TASK1 (TOT=14) %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+figure1 reference state
+figure2 reference input
+figure3 Angle of the first joint after ddp
+figure4 Velocity of the first joint after ddp
+figure5 Angle of the second joint
+figure6 Velocity of the second joint
+figure7 Torque of the first joint
+figure8 Torque of the second joint
+figure9 Descent direction
+figure10 Cost error (normalized)
+figure 1900 Armijo's plot
+
+CONTROLLER
+figure21 positions controller
+figure22 position error controller 
+figure23 velocity error controller 
+figure24 inpunt controller ??(output)
+figure201 tunung controller
+
+%%%%%%%%%%TASK2 (TOT=25) %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+figure1 possible workspace
+figure2 Shape curve that we want to draw
+%
+figure 100 theta1 (inversekinematics)
+figure 101 theta2
+%
+figure3 References angles
+figure4 References input
+%
+CONTROLLER as in the previous task 
+figure21
+figure22
+figure23
+figure24
+figure201 tunung controller
+%
+figure5 Position joint 1 (ref/ev)
+figure6 velocity joint 1 (ref/ev) 
+figure7 Position joint 2 (ref/ev)
+figure8 velocity joint 2 (ref/ev) 
+figure9 input joint 1 (ref/ev)
+figure10 input joint 2 (ref/ev)
+figure11 Descent direction
+figure12 Normalized cost error 
+%
+Plot in Real Time 
+figure30 Position Joint 1 (ref/ev)
+figure31 Velocity Joint 1 (ref/ev)
+figure32 Position Joint 2 (ref/ev)
+figure33 Position Joint 2 (ref/ev)
+figure34 input Joint 1 (ref/ev)
+figure35 input Joint 2 (ref/ev)
+
+
+%%%%%%%%%%TASK3 (TOT=7) %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+figure13 Evolution theta1 (opt/ev)
+figure14 Evolution theta1_dot (opt/ev)
+figure15 Evolution theta2 (opt/ev)
+figure16 Evolution theta2_dot (opt/ev)
+figure17 Evolution u1 (opt/ev)
+figure18 Evolution u1 (opt/ev)
+figure200 Desired curve(End effector position)
+
+aggiornamento: 30/08/2022
+

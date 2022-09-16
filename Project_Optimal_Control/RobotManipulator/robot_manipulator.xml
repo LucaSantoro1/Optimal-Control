@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="luca" on="06/25/22||13:57:29" using="Simscape Multibody Link Version 6.0" from="Pro/Engineer Creo 8.0 - 2021404"/>
+<ModelUnits mass="kg" length="m"/>
+<RootAssembly name="2DOF_ROBOT" uid="2DOF_ROBOT_asm" version="4769">
+<AssemblyFile name="2DOF_ROBOT.asm" type="ProEngineer Assembly"/>
+<InstanceTree>
+<Instance name="BASE" uid="2" entityUid="BASE_prt">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.4529409499999999" g="0.38823509999999994" b="0.23725514999999997" a="1"/>
+<Diffuse r="0.82352899999999996" g="0.70588200000000001" b="0.43137300000000001" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>1</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="PARTE_BRACCIO_INFERIORE" uid="3" entityUid="PARTE_BRACCIO_INFERIORE_prt">
+<Transform>
+<Rotation>0.76332770874320222 -0.64601146202281368 0 0.64601146202281368 0.76332770874320222 0 0 0 1.0000000000000002</Rotation>
+<Translation>0.38166385437160133 0.54304723865334936 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.032353199999999999" g="0.20490195" b="0.37745124999999996" a="1"/>
+<Diffuse r="0.058824000000000001" g="0.37254900000000002" b="0.68627499999999997" a="1"/>
+<Specular r="0.5" g="0.5" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.89999997615814209</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="PARTE_BRACCIO_SUPERIORE" uid="4" entityUid="PARTE_BRACCIO_SUPERIORE_prt">
+<Transform>
+<Rotation>-0.99363844039079408 -0.11261727122315895 0 0.11261727122315895 -0.99363844039079408 0 0 0 1</Rotation>
+<Translation>0.26650848854780518 0.92236160527633615 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.38823509999999994" g="0.053921449999999996" b="0.053921449999999996" a="1"/>
+<Diffuse r="0.70588200000000001" g="0.098039000000000001" b="0.098039000000000001" a="1"/>
+<Specular r="0.5" g="0.5" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.89999997615814209</Shininess>
+</VisualProperties>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident_3_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>2</Uid>
+</InstancePath>
+<Position>0 22.004150764194225 -20</Position>
+<Axis>0 0 10</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>3</Uid>
+</InstancePath>
+<Position>-50 0 -10</Position>
+<Axis>0 0 20</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_3_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>2</Uid>
+</InstancePath>
+<Position>0 0 -10</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>3</Uid>
+</InstancePath>
+<Position>-50 0 -10</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_4_0">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>3</Uid>
+</InstancePath>
+<Position>50 -1.3607186657192824e-016 -14.000000000000004</Position>
+<Axis>0 0 28.000000000000004</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>4</Uid>
+</InstancePath>
+<Position>-50 0 -10</Position>
+<Axis>0 0 20</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident_4_1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>3</Uid>
+</InstancePath>
+<Position>50 0 10</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>4</Uid>
+</InstancePath>
+<Position>-50 0 10</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="BASE" uid="BASE_prt" version="3795">
+<ModelUnits mass="g" length="cm"/>
+<PartFile name="BASE.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>274076.0121443696</Mass>
+<CenterOfMass>0 1.6224284092896593 0</CenterOfMass>
+<Inertia>135545722.36473364 239732950.66450399 132742502.62889297 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_prt.step" type="STEP"/>
+</Part>
+<Part name="PARTE_BRACCIO_INFERIORE" uid="PARTE_BRACCIO_INFERIORE_prt" version="4802">
+<ModelUnits mass="g" length="cm"/>
+<PartFile name="PARTE_BRACCIO_INFERIORE.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>39721.152899197194</Mass>
+<CenterOfMass>-6.7040349212222567 0 0</CenterOfMass>
+<Inertia>2323335.4619654869 59829600.659022972 58855852.515172631 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="parte_braccio_inferiore_prt.step" type="STEP"/>
+</Part>
+<Part name="PARTE_BRACCIO_SUPERIORE" uid="PARTE_BRACCIO_SUPERIORE_prt" version="7572">
+<ModelUnits mass="g" length="cm"/>
+<PartFile name="PARTE_BRACCIO_SUPERIORE.prt" type="ProEngineer Part"/>
+<MassProperties>
+<Mass>41559.245625730546</Mass>
+<CenterOfMass>-2.475591340927763 0 0</CenterOfMass>
+<Inertia>1705916.3629063768 68423151.421040744 68125806.840583995 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="parte_braccio_superiore_prt.step" type="STEP"/>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
